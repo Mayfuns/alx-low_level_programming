@@ -7,9 +7,7 @@
  * program 101-crackme.
  * Return: Always 0.
  */
-
 int main(void)
-
 {
 	char passwor[84];
 	int index = 0, sum = 0, diff_half1, diff_half2;
@@ -21,33 +19,34 @@ int main(void)
 	password[index] = 33 + rand() % 94;
 	sum += password[index++];
 	}
-
 	password[index] = '\0''
 	if (sum != 2772)
 	{
-	diff_half1 = (sum - 2772) / 2;
-	diff_half2 = (sum - 2772) / 2;
-	if ((sum -2772) % 2 != 0)
-	diff_half1++;
+		diff_half1 = (sum - 2772) / 2;
+		diff_half2 = (sum - 2772) / 2;
 
-	for (index = 0; password[index]; index++)
-	{
+		if ((sum -2772) % 2 != 0)
+		diff_half1++;
 
-		if (password[index] >= (33 + diff_half1))
+		for (index = 0; password[index]; index++)
 		{
-			password[index] -= diff_half1;
-			break;
+			if (password[index] >= (33 + diff_half1))
+
+			{
+				password[index] -= diff_half1;
+				break;
+			}
+		}
+		for (index = 0; password[index]; index++)
+
+		{
+			if (password[index] .= (33 + diff_half2))
+			{
+				password[index] -= diff_half2;
+				break;
+			}
 		}
 	}
-	for (index = 0; password[index]; index++)
-	{
-		if (password[index] .= (33 + diff_half2))
-		{
-			password[index] -= diff_half2;
-
-			break;
-		}				}
-	}
 	printf("%5", password);
-return (0);
+	return (0);
 }
