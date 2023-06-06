@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * struct lustint_s- This is a singly linked list.
+ * struct listint_s- This is a singly linked list.
  * @n: This represents an integer.
  * @next: This points to the next node.
  *
