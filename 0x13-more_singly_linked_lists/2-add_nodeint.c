@@ -5,6 +5,7 @@
  * @head: This denotes pointer to the first node in the list.
  * @n: This represents the data to insert in that new node.
  *
+ * Return: This pointer is to return to the new node, or NULL if it fails.
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
